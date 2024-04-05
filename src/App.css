@@ -1,38 +1,83 @@
-.App {
+body {
+  background-color: rgba(239, 206, 240, 0.893);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 50px;
+  color: blue;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-section {
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-title {
+  color: black;
+  margin-top: 0;
+}
+.section-title-one {
+  color: rgb(138, 7, 182);
+  margin-top: 0;
+}
+.section-title-two {
+  color: rgb(4, 126, 4);
+  margin-top: 0;
+}
+.section-title-three {
+  color: rgb(174, 7, 7);
+  margin-top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.add-task-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.add-task-button {
+  background-color: #66bc99;
   color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.add-task-button:hover {
+  background-color: #046822;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.task-actions {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: rgb(57, 2, 13);
 }
